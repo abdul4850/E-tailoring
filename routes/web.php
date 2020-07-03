@@ -11,7 +11,11 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 use Illuminate\Foundation\Console\RouteCacheCommand;
+
 
 
 Route::get('/', function () {
@@ -45,9 +49,9 @@ Route::get('products/shoppingCart', [
     'uses' => 'ProductController@getCart',
     'as' => 'shopping-cart'
 ]);
-Route::post('products/checkout', [
-    'uses' => 'OrderController@getOrder',
-    'as' => 'checkout'
+Route::post('/games', [
+    'uses' => 'CheckoutController@store',
+    'as' => 'games'
 ]);
 
 

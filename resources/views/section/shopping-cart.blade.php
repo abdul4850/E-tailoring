@@ -41,7 +41,7 @@
                                 <li class="subtotal">Subtotal <span> {{$totalPrice}}</span></li>
                                 <li class="cart-total">Total <span> {{$totalPrice}}</span></li>
                             </ul>
-                        <a href="{{route('checkout')}}" class="proceed-btn">PROCEED TO CHECK OUT</a>
+                        <a href="{{route('games')}}" class="proceed-btn">PROCEED TO CHECK OUT</a>
                         </div>
                     </div>
                 </div>

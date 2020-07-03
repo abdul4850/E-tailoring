@@ -13,17 +13,13 @@ class CreateCheckoutsTable extends Migration
      */
     public function up()
     {
+
         Schema::create('checkouts', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('FirstName');
-            $table->string('LastName');
-            $table->string('CompanyName');
-            $table->string('Country');
-            $table->string('StreetAddress');
-            $table->string('Postcode');
-            $table->string('City');
-            $table->string('EmailAddress');
-            $table->integer('Phone');
+            $table->increments('id');
+            $table->string('title');
+            $table->string('publisher');
+            $table->integer('releasedate');
+            $table->string('image');
             $table->timestamps();
         });
     }

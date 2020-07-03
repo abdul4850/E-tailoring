@@ -24,23 +24,12 @@
                     <h5>Information</h5>
                     <ul>
                         <li><a href="{{ route('about') }}">About Us</a></li>
-                        <li><a href="#">Checkout</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Serivius</a></li>
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
+
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-2">
-                <div class="footer-widget">
-                    <h5>My Account</h5>
-                    <ul>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Shopping Cart</a></li>
-                        <li><a href="#">Shop</a></li>
-                    </ul>
-                </div>
-            </div>
+
             <div class="col-lg-4">
                 <div class="newslatter-item">
                     <h5>Join Our Newsletter Now</h5>

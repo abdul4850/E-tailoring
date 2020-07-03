@@ -29,7 +29,7 @@
                     <div class="single-banner">
                         <img src="https://cdn.shopify.com/s/files/1/0247/0828/4509/products/Men-Shalwar-kameez-Dark-Brown_1024x1024.jpg?v=1584511265" alt="">
                         <div class="inner-text">
-                            <h4>Men’s</h4>
+                            <a href="{{ route('mensproducts') }}"><h4>Men’s</h4></a>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                     <div class="single-banner">
                         <img src="https://cdn.shopify.com/s/files/1/0247/0828/4509/products/45_47c4fede-718c-4608-8cfd-44cf30d1838d_1024x1024.jpg?v=1573451598" alt="">
                         <div class="inner-text">
-                            <h4>Women’s</h4>
+                            <a href="{{ route('womensproducts') }}"><h4>Women’s</h4></a>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                     <div class="single-banner">
                         <img src="https://cdn.shopify.com/s/files/1/0247/0828/4509/products/38_0750619e-516c-4d66-956d-7b9aacf01004_1024x1024.jpg?v=1580201694" alt="">
                         <div class="inner-text">
-                            <h4>Kid’s</h4>
+                            <a href="{{ route('kidsproducts') }}"><h4>Kid’s</h4></a>
                         </div>
                     </div>
                 </div>
@@ -59,13 +59,13 @@
                 <div class="col-lg-3">
                     <div class="product-large set-bg" data-setbg="https://cdn.shopify.com/s/files/1/0247/0828/4509/products/DSC_1589_683x1023_108050ab-a491-4c5c-9213-15bb10cf0827_1024x1024.jpg?v=1584441784">
                         <h2>Women’s</h2>
-                        <a href="{{route('mensproducts')}}">Discover More</a>
+                        <a href="{{ route('womensproducts') }}">Discover More</a>
                     </div>
                 </div>
                 <div class="col-lg-8 offset-lg-1">
                     <div class="filter-control">
                         <ul>
-                            <li class="active">Women Clothings</li>
+                            <li class="active">Women Stiching Designs</li>
                         </ul>
                     </div>
                     <div class="product-slider owl-carousel">
@@ -77,19 +77,19 @@
                                     <i class="icon_heart_alt"></i>
                                 </div>
                                 <ul>
-                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="{{route('mensproducts')}}">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="w-icon active"><a href="{{ route('womensproducts') }}"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="{{ route('womensproducts') }}">+ Quick View</a></li>
+                                    <li class="w-icon"><a href="{{ route('womensproducts') }}"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Coat</div>
+                                <div class="catagory-name">Kurta Kameez</div>
                                 <a href="{{route('mensproducts')}}">
-                                    <h5>Pure Pineapple</h5>
+                                    <h5>Premier Womens Shalwar Kameez Stiching</h5>
                                 </a>
                                 <div class="product-price">
-                                    $14.00
-                                    <span>$35.00</span>
+                                    800
+                                    <span>Rs 1000</span>
                                 </div>
                             </div>
                         </div>
@@ -100,18 +100,18 @@
                                     <i class="icon_heart_alt"></i>
                                 </div>
                                 <ul>
-                                    <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="{{route('mensproducts')}}">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="w-icon active"><a href="{{ route('womensproducts') }}"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="{{ route('womensproducts') }}">+ Quick View</a></li>
+                                    <li class="w-icon"><a href="{{ route('womensproducts') }}"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Shoes</div>
+                                <div class="catagory-name">Kurta Kameez</div>
                                 <a href="#">
-                                    <h5>Guangzhou sweater</h5>
+                                    <h5>Premier Womens Shalwar Kameez Stiching</h5>
                                 </a>
                                 <div class="product-price">
-                                    $13.00
+                                    800
                                 </div>
                             </div>
                         </div>
@@ -122,18 +122,18 @@
                                     <i class="icon_heart_alt"></i>
                                 </div>
                                 <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="w-icon active"><a href="{{ route('womensproducts') }}"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="{{ route('womensproducts') }}">+ Quick View</a></li>
+                                    <li class="w-icon"><a href="{{ route('womensproducts') }}"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
+                                <div class="catagory-name">Kurta Kameez</div>
                                 <a href="#">
-                                    <h5>Pure Pineapple</h5>
+                                    <h5>Premier Womens Shalwar Kameez Stiching</h5>
                                 </a>
                                 <div class="product-price">
-                                    $34.00
+                                    800
                                 </div>
                             </div>
                         </div>
@@ -144,18 +144,18 @@
                                     <i class="icon_heart_alt"></i>
                                 </div>
                                 <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="w-icon active"><a href="{{ route('womensproducts') }}"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="{{ route('womensproducts') }}">+ Quick View</a></li>
+                                    <li class="w-icon"><a href="{{ route('womensproducts') }}"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
+                                <div class="catagory-name">Kurta Kameez</div>
                                 <a href="#">
-                                    <h5>Converse Shoes</h5>
+                                    <h5>Premier Womens Shalwar Kameez Stiching</h5>
                                 </a>
                                 <div class="product-price">
-                                    $34.00
+                                    800
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
                 <div class="col-lg-8">
                     <div class="filter-control">
                         <ul>
-                            <li class="active">Men Clothings</li>
+                            <li class="active">Men Stiching Designs</li>
 
                         </ul>
                     </div>
@@ -214,15 +214,15 @@
                                     <i class="icon_heart_alt"></i>
                                 </div>
                                 <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="w-icon active"><a href="{{ route('mensproducts') }}"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="{{ route('mensproducts') }}">+ Quick View</a></li>
+                                    <li class="w-icon"><a href="{{ route('mensproducts') }}"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Coat</div>
-                                <a href="#">
-                                    <h5>Pure Pineapple</h5>
+                                <div class="catagory-name">Shalwar Kameez</div>
+                                <a href="{{ route('mensproducts') }}">
+                                    <h5>Premier Mens Shalwar Kameez Stiching</h5>
                                 </a>
                                 <div class="product-price">
                                     1200
@@ -237,15 +237,15 @@
                                     <i class="icon_heart_alt"></i>
                                 </div>
                                 <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="w-icon active"><a href="{{ route('mensproducts') }}"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="{{ route('mensproducts') }}">+ Quick View</a></li>
+                                    <li class="w-icon"><a href="{{ route('mensproducts') }}"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Shoes</div>
-                                <a href="#">
-                                    <h5>Guangzhou sweater</h5>
+                                <div class="catagory-name">Shalwar Kameez</div>
+                                <a href="{{ route('mensproducts') }}">
+                                    <h5>Premier Mens Shalwar Kameez Stiching</h5>
                                 </a>
                                 <div class="product-price">
                                     1200
@@ -260,15 +260,15 @@
                                     <i class="icon_heart_alt"></i>
                                 </div>
                                 <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="w-icon active"><a href="{{ route('mensproducts') }}"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="{{ route('mensproducts') }}">+ Quick View</a></li>
+                                    <li class="w-icon"><a href="{{ route('mensproducts') }}"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
-                                <a href="#">
-                                    <h5>Pure Pineapple</h5>
+                                <div class="catagory-name">Shalwar Kameez</div>
+                                <a href="{{ route('mensproducts') }}">
+                                    <h5>Premier Mens Shalwar Kameez Stiching</h5>
                                 </a>
                                 <div class="product-price">
                                     1100
@@ -283,15 +283,15 @@
                                     <i class="icon_heart_alt"></i>
                                 </div>
                                 <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="w-icon active"><a href="{{ route('mensproducts') }}"><i class="icon_bag_alt"></i></a></li>
+                                    <li class="quick-view"><a href="{{ route('mensproducts') }}">+ Quick View</a></li>
+                                    <li class="w-icon"><a href="{{ route('mensproducts') }}"><i class="fa fa-random"></i></a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
-                                <a href="#">
-                                    <h5>Converse Shoes</h5>
+                                <div class="catagory-name">Shalwar Kameez</div>
+                                <a href="{{ route('mensproducts') }}">
+                                    <h5>Premier Mens Shalwar Kameez Stiching</h5>
                                 </a>
                                 <div class="product-price">
                                     1100
@@ -304,7 +304,7 @@
                 <div class="col-lg-3 offset-lg-1">
                     <div class="product-large set-bg m-large" data-setbg="https://cdn.shopify.com/s/files/1/0247/0828/4509/products/Men-Premium-Embroidered-Kameez-Shalwar-Brown1_1024x1024.jpg?v=1578649530">
                         <h2>Men’s</h2>
-                        <a href="#">Discover More</a>
+                        <a href="{{ route('mensproducts') }}">Discover More</a>
                     </div>
                 </div>
             </div>

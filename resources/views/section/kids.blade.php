@@ -25,7 +25,7 @@
                                     </a>
                                     <div class="product-price">
                                         {{$product->price}}
-                                        <span>$35.00</span>
+                                        <span>900</span>
                                     </div>
                                 </div>
                             </div>

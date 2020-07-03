@@ -6,8 +6,6 @@
             <div class="col-lg-5">
                 <div class="contact-title">
                     <h4>Contacts Us</h4>
-                    <p>Contrary to popular belief, Lorem Ipsum is simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, maki years old.</p>
                 </div>
                 <div class="contact-widget">
                     <div class="cw-item">
@@ -16,7 +14,7 @@
                         </div>
                         <div class="ci-text">
                             <span>Address:</span>
-                            <p>60-49 Road 11378 New York</p>
+                            <p>49-E Cantt Lahore</p>
                         </div>
                     </div>
                     <div class="cw-item">
@@ -25,7 +23,7 @@
                         </div>
                         <div class="ci-text">
                             <span>Phone:</span>
-                            <p>+65 11.188.888</p>
+                            <p>+92 3154421246</p>
                         </div>
                     </div>
                     <div class="cw-item">
@@ -34,7 +32,7 @@
                         </div>
                         <div class="ci-text">
                             <span>Email:</span>
-                            <p>hellocolorlib@gmail.com</p>
+                            <p>admin@e-tailoring.com</p>
                         </div>
                     </div>
                 </div>

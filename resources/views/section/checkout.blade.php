@@ -1,98 +1,40 @@
 @extends('layouts.master')
 @section('content')
-<section class="checkout-section spad">
-    <div class="container">
-        <form method="POST" action="{{ route('OrderController@getOrder') }}" class="checkout-form">
+<h2>Add a game</h2>
 
-            <div class="row">
-                <div class="col-lg-6">
-                    <h4>Billing Details</h4>
-                    <div class="row">
-
-                        <div class="col-lg-6">
-                            <label for="fir">First Name<span>*</span></label>
-                            <input type="text" id="fir">
-                        </div>
-                        <div class="col-lg-6">
-                            <label for="last">Last Name<span>*</span></label>
-                            <input type="text" id="last">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="cun-name">Company Name</label>
-                            <input type="text" id="cun-name">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="cun">Country<span>*</span></label>
-                            <input type="text" id="cun">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="street">Street Address<span>*</span></label>
-                            <input type="text" id="street" class="street-first">
-                            <input type="text">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="zip">Postcode / ZIP (optional)</label>
-                            <input type="text" id="zip">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="town">Town / City<span>*</span></label>
-                            <input type="text" id="town">
-                        </div>
-                        <div class="col-lg-6">
-                            <label for="email">Email Address<span>*</span></label>
-                            <input type="text" id="email">
-                        </div>
-                        <div class="col-lg-6">
-                            <label for="phone">Phone<span>*</span></label>
-                            <input type="text" id="phone">
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="create-item">
-                                <label for="acc-create">
-                                    Create an account?
-                                    <input type="checkbox" id="acc-create">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="place-order">
-                        <h4>Your Order</h4>
-                        <div class="order-total">
-                            <ul class="order-table">
-                                <li>Product <span>Total</span></li>
-                                <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
-                                <li class="fw-normal">Combination x 1 <span>$60.00</span></li>
-                                <li class="fw-normal">Combination x 1 <span>$120.00</span></li>
-                                <li class="fw-normal">Subtotal <span>$240.00</span></li>
-                                <li class="total-price">Total <span>$240.00</span></li>
-                            </ul>
-                            <div class="payment-check">
-                                <div class="pc-item">
-                                    <label for="pc-check">
-                                        Cheque Payment
-                                        <input type="checkbox" id="pc-check">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="pc-item">
-                                    <label for="pc-paypal">
-                                        Paypal
-                                        <input type="checkbox" id="pc-paypal">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="order-btn">
-                                <button type="submit" class="site-btn place-btn">Place Order</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <form method="post" action="/games" enctype="multipart/form-data">
+        {{ csrf_field() }}
+        <div class="form-group row">
+            <label for="titleid" class="col-sm-3 col-form-label">Game Title</label>
+            <div class="col-sm-9">
+                <input name="title" type="text" class="form-control" id="titleid" placeholder="Game Title">
             </div>
-        </form>
-    </div>
-</section>
+        </div>
+        <div class="form-group row">
+            <label for="publisherid" class="col-sm-3 col-form-label">Game Publisher</label>
+            <div class="col-sm-9">
+                <input name="publisher" type="text" class="form-control" id="publisherid"
+                       placeholder="Game Publisher">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="releasedateid" class="col-sm-3 col-form-label">Release Date</label>
+            <div class="col-sm-9">
+                <input name="releasedate" type="text" class="form-control" id="releasedateid"
+                       placeholder="Release Date">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="gameimageid" class="col-sm-3 col-form-label">Game Image</label>
+            <div class="col-sm-9">
+                <input name="image" type="file" id="gameimageid" class="custom-file-input">
+                <span style="margin-left: 15px; width: 480px;" class="custom-file-control"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="offset-sm-3 col-sm-9">
+                <button type="submit" class="btn btn-primary">Submit Game</button>
+            </div>
+        </div>
+    </form>
 @endsection

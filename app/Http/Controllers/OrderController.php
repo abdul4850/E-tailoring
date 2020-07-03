@@ -34,21 +34,21 @@ class OrderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function getOrder(Request $request)
+    public function getOrder()
     {
 
 
         $order = new Checkout();
 
-        $order->FirstName = $request('FirstName');
-        $order->LastName = $request('LastName');
-        $order->CompanyName = $request('CompanyName');
-        $order->Country = $request('Country');
-        $order->StreetAddress = $request('StreetAddress');
-        $order->Postcode = $request('Postcode');
-        $order->City = $request('City');
-        $order->EmailAddress = $request('EmailAddress');
-        $order->Phone = $request('Phone');
+        $order->FirstName = request('FirstName');
+        $order->LastName = request('LastName');
+        $order->CompanyName = request('CompanyName');
+        $order->Country = request('Country');
+        $order->StreetAddress = request('StreetAddress');
+        $order->Postcode = request('Postcode');
+        $order->City = request('City');
+        $order->EmailAddress = request('EmailAddress');
+        $order->Phone = request('Phone');
         $order->save();
         return redirect('/');
     }

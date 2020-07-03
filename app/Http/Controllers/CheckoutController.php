@@ -33,10 +33,15 @@ class CheckoutController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+
+    public function store()
     {
-        //
+        var_dump(request('title'));
+        var_dump(request('publisher'));
+        var_dump(request('releasedate'));
+        var_dump(request('image'));
     }
+
 
     /**
      * Display the specified resource.
