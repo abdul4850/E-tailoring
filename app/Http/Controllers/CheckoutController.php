@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Input;
 use App\Checkout;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,7 @@ class CheckoutController extends Controller
      */
     public function index()
     {
-        //
+        return view('section.checkout');
     }
 
     /**
@@ -34,12 +35,23 @@ class CheckoutController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function store()
+    public function store(Request $request)
     {
-        var_dump(request('title'));
-        var_dump(request('publisher'));
-        var_dump(request('releasedate'));
-        var_dump(request('image'));
+
+
+        $order = new Checkout();
+
+        $order->FirstName = $request->FirstName;
+        $order->LastName = $request->LastName;
+        $order->Country = $request->Country;
+        $order->StreetAddress = $request->StreetAddress;
+        $order->Postcode = $request->Postcode;
+        $order->City = $request->City;
+        $order->EmailAddress = $request->EmailAddress;
+        $order->Phone = $request->Phone;
+        $order->save();
+        session()->flash('msg', 'Successfully done the operation.');
+        return redirect('/orderconfirm');
     }
 
 

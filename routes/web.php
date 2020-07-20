@@ -14,7 +14,6 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-use Illuminate\Foundation\Console\RouteCacheCommand;
 
 
 
@@ -39,20 +38,29 @@ Route::get('/contact', function () {
 Route::get('/about', function () {
     return view('section.about');
 })->name('about');
+Route::get('/custmization', function () {
+    return view('section.customization');
+})->name('custmizaion');
 
 Route::get('products/{id}/addtocart', [
     'uses' => 'ProductController@addToCart',
     'as' => 'addtocart'
 ]);
 
-Route::get('products/shoppingCart', [
+Route::get('shoppingCart', [
     'uses' => 'ProductController@getCart',
     'as' => 'shopping-cart'
 ]);
-Route::post('/games', [
-    'uses' => 'CheckoutController@store',
-    'as' => 'games'
-]);
+Route::get('products/shoppingCart/checkout', 'ProductController@checkoutDetails');
+Route::post('/order', 'CheckoutController@store');
+Route::get('/orderconfirm', function () {
+    return view('section.orderconfirm');
+});
 
+Route::group(['middleware' => ['auth', 'admin']], function () {
+    Route::get('/dashboard', 'AdminController@getIndex');
+    Route::get('/adminproducts', 'AdminController@getProduct');
+    Route::get('/adminorders', 'AdminController@getOrder');
+});
 
 Auth::routes();

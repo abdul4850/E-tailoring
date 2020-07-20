@@ -67,9 +67,15 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function checkoutDetails()
     {
-        //
+        if (!Session::has('cart')) {
+            return view('section.checkout');
+        }
+
+        $oldCart = Session::get('cart');
+        $cart = new Cart($oldCart);
+        return view('section.checkout', ['products' => $cart->items, 'totalPrice' => $cart->totalPrice]);
     }
 
     /**

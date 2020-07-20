@@ -40,7 +40,6 @@
             <ul>
                 <li class="active">
                     <a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="{{ route('about') }}">About Us</a></li>
                     <li><a href="#">Collection</a>
                     <ul class="dropdown">
                         <li><a href="{{ route('mensproducts') }}">Mens</a></li>
@@ -48,14 +47,14 @@
                         <li><a href="{{ route('kidsproducts') }}">Kid's</a></li>
                     </ul>
                 </li>
-
+                <li><a href="{{ route('custmizaion') }}">Customization</a></li>
                 <li><a href="{{ route('contact') }}">Contact</a></li>
                 @guest
                 <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
                 <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
                 @else
                 <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle"  href="{{ route('logout') }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle"  href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
 
@@ -77,7 +76,7 @@
                 <li><a href="#">More</a>
                     <ul class="dropdown">
                         <li><a href="{{route('shopping-cart')}}">Shopping Cart</a></li>
-                        <li><a href="./faq.html">Faq</a></li>
+
                     </ul>
                 </li>
             </ul>
